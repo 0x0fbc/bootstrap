@@ -1,7 +1,7 @@
 sudo apt-get update
 sudo apt-get dist-upgrade -y
 
-sudo apt-get install git build-essential zsh zsh-autosuggestions zsh-syntax-highlighting neovim gdb fonts-go -y
+sudo apt-get install git build-essential zsh zsh-autosuggestions zsh-syntax-highlighting neovim gdb fonts-ibm-plex -y
 
 git clone https://github.com/zsh-users/zsh-history-substring-search.git /usr/share/zsh/plugins/zsh-history-substring-search
 cp ./rcfiles/.zshrc ~/.zshrc
