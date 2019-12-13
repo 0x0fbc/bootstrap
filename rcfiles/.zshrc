@@ -193,4 +193,5 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
                 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
     ;;
 esac
+if [ "$TMUX" = "" ]; then tmux; fi
 
