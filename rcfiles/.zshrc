@@ -20,8 +20,8 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 HISTFILE=~/.zhistory                                                                                                                                                                                                   
 HISTSIZE=1000
 SAVEHIST=500
-#export EDITOR=/usr/bin/nano
-#export VISUAL=/usr/bin/nano
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 
@@ -49,7 +49,7 @@ bindkey '^[Oc' forward-word                                     #
 bindkey '^[Od' backward-word                                    #
 bindkey '^[[1;5D' backward-word                                 #
 bindkey '^[[1;5C' forward-word                                  #
-bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
+#bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ## Alias section 
@@ -193,5 +193,5 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
                 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
     ;;
 esac
-if [ "$TMUX" = "" ]; then tmux; fi
+#if [ "$TMUX" = "" ]; then tmux; fi
 
